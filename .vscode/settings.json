@@ -9,5 +9,7 @@
     },
     "editor.parameterHints.enabled": false,
     "editor.wordWrap": "off",
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "js/ts.suggest.includeCompletionsForImportStatements": false,
+    "editor.inlineSuggest.enabled": false
 }

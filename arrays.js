@@ -38,3 +38,15 @@ var tom = {
 
 // 3. Woops after adding all of those people to the same contacts list you realized you need a list just the instructors.
 // create a new variable named instructors and populate it using the contacts array.
+
+//Answer 1:
+console.log('Answer 1 :=>', contacts.length)
+
+// Answer 2:
+contacts = [].concat(jake, matt, tony, andrew, tom);
+console.log('Answer 2 :=>', contacts)
+
+// Answer 3:
+var instructors = contacts.filter(person => person.title === 'instructor');
+
+console.log('Answer 3 :=>', instructors)

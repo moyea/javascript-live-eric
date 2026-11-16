@@ -13,3 +13,29 @@ var jsHistory = 'JavaScript, not to be confused with Java, was created in 10 day
 //I SCREAM, you SCREAM, we all SCREAM for icecream
 
 var text = 'I scream, you scream, we all scream for icecream';
+
+
+function one(str){
+  return str.replace(/\bi\b/g, 'I');
+}
+
+console.log(one(sentence))
+
+
+function two(str){
+  let arr=str.split('');
+  return arr.reduce((acc,char)=>{
+    if(char.toUpperCase()==='A'){
+       acc++
+    }
+    return acc
+  },0)
+}
+
+console.log(two(jsHistory))
+
+function three(str){
+  return str.replace(/\bscream\b/g, 'SCREAM');
+}
+
+console.log(three(text))

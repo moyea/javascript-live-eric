@@ -66,3 +66,7 @@ var crayola1990 = [
  * Take advantage of the methods available on strings http://www.w3schools.com/js/js_string_methods.asp
  * There are multiple ways to do something like this but you might consider using split and join
  */
+
+crayola1990 = crayola1990.map(color => color.toLowerCase().replaceAll(' ', '-'));
+
+console.log(crayola1990)
